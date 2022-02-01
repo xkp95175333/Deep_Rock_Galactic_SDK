@@ -1,0 +1,35 @@
+// Class AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary
+// Size: 0x28 (Inherited: 0x28)
+struct UAnalyticsBlueprintLibrary : UBlueprintFunctionLibrary {
+
+	bool StartSessionWithAttributes(struct TArray<struct FAnalyticsEventAttr> Attributes); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.StartSessionWithAttributes // (Final|Native|Static|Public|HasOutParms|BlueprintCallable) // @ game+0x5fd000
+	bool StartSession(); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.StartSession // (Final|Native|Static|Public|BlueprintCallable) // @ game+0x5fcfd0
+	void SetUserId(struct FString UserId); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetUserId // (Final|Native|Static|Public|BlueprintCallable) // @ game+0x5fcf40
+	void SetSessionId(struct FString sessionId); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetSessionId // (Final|Native|Static|Public|BlueprintCallable) // @ game+0x5fceb0
+	void SetLocation(struct FString Location); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetLocation // (Final|Native|Static|Public|BlueprintCallable) // @ game+0x5fce20
+	void SetGender(struct FString Gender); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetGender // (Final|Native|Static|Public|BlueprintCallable) // @ game+0x5fcd90
+	void SetBuildInfo(struct FString BuildInfo); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetBuildInfo // (Final|Native|Static|Public|BlueprintCallable) // @ game+0x5fcd00
+	void SetAge(int32_t Age); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetAge // (Final|Native|Static|Public|BlueprintCallable) // @ game+0x5fcc90
+	void RecordSimpleItemPurchaseWithAttributes(struct FString ItemID, int32_t ItemQuantity, struct TArray<struct FAnalyticsEventAttr> Attributes); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordSimpleItemPurchaseWithAttributes // (Final|Native|Static|Public|HasOutParms|BlueprintCallable) // @ game+0x5fcb30
+	void RecordSimpleItemPurchase(struct FString ItemID, int32_t ItemQuantity); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordSimpleItemPurchase // (Final|Native|Static|Public|BlueprintCallable) // @ game+0x5fca60
+	void RecordSimpleCurrencyPurchaseWithAttributes(struct FString GameCurrencyType, int32_t GameCurrencyAmount, struct TArray<struct FAnalyticsEventAttr> Attributes); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordSimpleCurrencyPurchaseWithAttributes // (Final|Native|Static|Public|HasOutParms|BlueprintCallable) // @ game+0x5fc900
+	void RecordSimpleCurrencyPurchase(struct FString GameCurrencyType, int32_t GameCurrencyAmount); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordSimpleCurrencyPurchase // (Final|Native|Static|Public|BlueprintCallable) // @ game+0x5fc830
+	void RecordProgressWithFullHierarchyAndAttributes(struct FString ProgressType, struct TArray<struct FString> ProgressNames, struct TArray<struct FAnalyticsEventAttr> Attributes); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordProgressWithFullHierarchyAndAttributes // (Final|Native|Static|Public|HasOutParms|BlueprintCallable) // @ game+0x5fc680
+	void RecordProgressWithAttributes(struct FString ProgressType, struct FString ProgressName, struct TArray<struct FAnalyticsEventAttr> Attributes); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordProgressWithAttributes // (Final|Native|Static|Public|HasOutParms|BlueprintCallable) // @ game+0x5fc510
+	void RecordProgress(struct FString ProgressType, struct FString ProgressName); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordProgress // (Final|Native|Static|Public|BlueprintCallable) // @ game+0x5fc430
+	void RecordItemPurchase(struct FString ItemID, struct FString Currency, int32_t PerItemCost, int32_t ItemQuantity); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordItemPurchase // (Final|Native|Static|Public|BlueprintCallable) // @ game+0x5fc2d0
+	void RecordEventWithAttributes(struct FString EventName, struct TArray<struct FAnalyticsEventAttr> Attributes); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordEventWithAttributes // (Final|Native|Static|Public|HasOutParms|BlueprintCallable) // @ game+0x5fc1b0
+	void RecordEventWithAttribute(struct FString EventName, struct FString AttributeName, struct FString AttributeValue); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordEventWithAttribute // (Final|Native|Static|Public|BlueprintCallable) // @ game+0x5fc080
+	void RecordEvent(struct FString EventName); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordEvent // (Final|Native|Static|Public|BlueprintCallable) // @ game+0x5fbff0
+	void RecordErrorWithAttributes(struct FString Error, struct TArray<struct FAnalyticsEventAttr> Attributes); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordErrorWithAttributes // (Final|Native|Static|Public|HasOutParms|BlueprintCallable) // @ game+0x5fbed0
+	void RecordError(struct FString Error); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordError // (Final|Native|Static|Public|BlueprintCallable) // @ game+0x5fbe40
+	void RecordCurrencyPurchase(struct FString GameCurrencyType, int32_t GameCurrencyAmount, struct FString RealCurrencyType, float RealMoneyCost, struct FString PaymentProvider); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordCurrencyPurchase // (Final|Native|Static|Public|BlueprintCallable) // @ game+0x5fbc90
+	void RecordCurrencyGivenWithAttributes(struct FString GameCurrencyType, int32_t GameCurrencyAmount, struct TArray<struct FAnalyticsEventAttr> Attributes); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordCurrencyGivenWithAttributes // (Final|Native|Static|Public|HasOutParms|BlueprintCallable) // @ game+0x5fbb30
+	void RecordCurrencyGiven(struct FString GameCurrencyType, int32_t GameCurrencyAmount); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordCurrencyGiven // (Final|Native|Static|Public|BlueprintCallable) // @ game+0x5fba60
+	struct FAnalyticsEventAttr MakeEventAttribute(struct FString AttributeName, struct FString AttributeValue); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.MakeEventAttribute // (Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // @ game+0x5fb8f0
+	struct FString GetUserId(); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.GetUserId // (Final|Native|Static|Public|BlueprintCallable) // @ game+0x5fb870
+	struct FString GetSessionId(); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.GetSessionId // (Final|Native|Static|Public|BlueprintCallable) // @ game+0x5fb7f0
+	void FlushEvents(); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.FlushEvents // (Final|Native|Static|Public|BlueprintCallable) // @ game+0x5fb7d0
+	void EndSession(); // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.EndSession // (Final|Native|Static|Public|BlueprintCallable) // @ game+0x5fb7b0
+};
+
